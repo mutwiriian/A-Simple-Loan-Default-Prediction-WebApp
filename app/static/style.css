@@ -1,0 +1,105 @@
+body {
+    font-family: "Montserrat" sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    overflow: hidden;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 40px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    color: rgba(11, 178, 14, 0.689);
+    text-shadow: 2px 2.5px rgba(168, 228, 181, 0.669);
+}
+#prediction {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+}
+
+#result {
+    margin-left: 10px;
+    font-weight: bolder;
+    font-size: 40px;
+    padding: 5px;
+}
+#variables_container {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 5px;
+    width: 700px;
+}
+
+input, select, button {
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    font-size: medium;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0,.4);
+    transition: 0.2s ease-in-out;
+}
+
+#variables_container > div > label {
+    font-size: 24px;
+    margin: 5px;
+}
+
+#variables_container > div {
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+}
+
+#score_container > input {
+    box-shadow: none;
+}
+ 
+#predict > button {
+    margin-top: 10px;
+    margin-left: 70px;
+    padding: 20px;
+    width: 200px;
+    border: none;
+    font-size: 24px;
+    background-color: rgba(11, 178, 14, 0.689);
+    color: #f0f0f0;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+#predict:hover > button{
+    background-color: #ddd;
+    color: black;
+}
+
+input:hover, select:hover {
+    box-shadow: 0px 3px 6px rgba(0,0,0,.8);
+}
+
+#score {
+    box-sizing: border-box;
+    height: 30px;
+    width: 300px;
+}
+
+.box {
+    display: flex;
+    align-items: center;
+}
+
+.box > div {
+    font-size: 25px;
+    font-weight: 600;
+    margin-left: 5px;
+}
