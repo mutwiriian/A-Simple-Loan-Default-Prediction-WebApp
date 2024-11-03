@@ -15,7 +15,8 @@ class PayLoad(SQLModel):
 class PredictData(PayLoad, table= True):
     id: uuid.UUID = Field(default_factory = uuid.uuid4, primary_key = True)
 
-engine = create_engine('postgresql://postgres:mutwiri@127.0.0.1:5432/loan_db')
+sqlite_filename = "loan_vars.db"
+engine = create_engine(f'sqlite:///{sqlite_filename}')
 
 def create_db_table():
     SQLModel.metadata.create_all(engine)
